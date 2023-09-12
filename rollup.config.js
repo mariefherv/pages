@@ -11,7 +11,7 @@ import replaceHtmlVars from 'rollup-plugin-replace-html-vars';
 import livereload from 'rollup-plugin-livereload'
 
 // get build mode
-const prodEnv = process.env.BABEL_ENV === "production"
+const prodEnv = process.argv.includes('production')
 const targetFolder = "public/"
 const srcFolder = "src/"
 const absolutePath = (dirPath) => path.resolve(__dirname, dirPath)

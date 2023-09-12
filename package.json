@@ -1,5 +1,5 @@
 {
-    "name": "kenzap-atacarnet-dashboard",
+    "name": "kenzap-component",
     "version": "1.0.0",
     "description": "Bundle JS files with support for ES2015/16, minification and sourcemaps using Rollup, optimized for Kenzap extension logics",
     "author": "Kenzap",
@@ -15,13 +15,13 @@
         "home": "copyfiles --up 2 './public/home/*' 'public'",
         "build": "rm -R -f public; mkdir public; npm-run-all build:*",
         "build:sass": "sass --no-source-map src/:public/",
-        "build:copy": "copyfiles -e './src/_/**' -e './src/**/*.scss' -e './src/**/*.js' --up 1 './src/**/*' 'public'",
-        "build:scripts": "BABEL_ENV=production rollup -c",
+        "build:copy": "copyfiles -e \"./src/_/**\" -e \"./src/**/*.scss\" -e \"./src/**/*.js\" --up 1 \"./src/**/*\" \"public\"",
+        "build:scripts": "rollup -c --name production",
         "build:home": "copyfiles --up 2 './public/home/*' 'public'",
         "i18n": "",
         "build-prod": "npm-run-all build-prod:scripts build:*",
         "build-dev:scripts": "rollup -c",
-        "build-prod:scripts": "BABEL_ENV=production rollup -c"
+        "build-prod:scripts": "rollup -c --name production"
     },
     "license": "Unlicense",
     "dependencies": {
