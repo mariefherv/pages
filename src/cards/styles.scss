@@ -1,0 +1,162 @@
+// media queries
+@mixin devices ($breakpoint) {
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 400px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == tablet {
+		@media only screen and (max-width: 767px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == md {	//medium screens
+		@media only screen and (max-width: 992px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == desktop {
+		@media only screen and (max-width: 1024px){
+			@content;
+		}
+	}
+}
+
+.kMBh0N {
+	*{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+	.container {
+		max-width: 1192px;
+		padding: 0 15px;
+		margin: 0 auto;
+
+		// breakpoints
+		@include devices(tablet) {
+			padding: 0 31px;
+		}
+
+		@include devices(phone) {
+			padding: 0 10px;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.services {
+		display: flex;
+		flex-flow: row wrap;
+		margin: 0 -15px;
+
+		// breakpoints
+		@include devices(desktop) {
+			justify-content: center;
+		}
+	
+		@include devices(tablet) {
+			max-width: 298px;
+			margin: 0 auto;
+		}
+				
+		li {
+			width: 25%;
+			padding: 15px;
+			margin-bottom: 2px;
+
+			@include devices(desktop) {
+				width: 33.3%;
+			}
+
+			@include devices(md) {
+				width: 50%;
+			}
+
+			@include devices(tablet) {
+				width: 100%;
+			}
+
+			a {
+				border: 1px solid #D2D2D2;
+				border-radius: 4px;
+				display: flex;
+				align-items: center;
+				color: #818181;
+				flex-direction: column;
+				text-align: center;
+				height: 100%;
+				padding: 35px 20px 27px;
+				text-decoration: none;
+
+				.h3 {
+					color: #111;
+					font-size: 20px;
+					max-width: 155px;
+					margin: 0 auto 4px;
+					line-height: 25px;
+				}
+
+				p {
+					line-height: 24px;
+					margin-bottom: 5px;
+				}
+
+				.ico-holder {
+					width: 114px;
+					height: 114px;
+					border: 3px solid #F8F8F8;
+					background: #F8F8F8;
+					border-radius: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-bottom: 19px;
+					transition: all 0.3s ease;
+		
+					>span {
+						font-size: 66px;
+					}
+
+					>span.icon-menu {
+						font-family: "icomoon" !important;
+						font-size: 15px;
+
+						.path1:before {
+							content: "";
+							color: #67AD5B;
+						}
+	
+						.path2:before {
+							content: "";
+							margin-left: -4em;
+							color: black;
+						}
+	
+						.path3:before {
+							content: "";
+							margin-left: -4em;
+							color: black;
+						}
+					}
+				}
+			}
+
+			a:hover {
+				background: rgba(0, 0, 0, 0.01);
+
+				.ico-holder {
+					border-color: #67AD5B;
+				}
+			}
+		}	
+	}
+}
