@@ -39,11 +39,11 @@
 
 		// breakpoints
 		@include devices(tablet) {
-			padding: 0 31px;
+			padding: 0 32px;
 		}
 
 		@include devices(phone) {
-			padding: 0 10px;
+			padding: 0 8px;
 		}
 	}
 
@@ -56,7 +56,7 @@
 	.services {
 		display: flex;
 		flex-flow: row wrap;
-		margin: 0 -15px;
+		margin: 0 -16px;
 
 		// breakpoints
 		@include devices(desktop) {
@@ -70,7 +70,7 @@
 				
 		li {
 			width: 25%;
-			padding: 15px;
+			padding: 16px;
 			margin-bottom: 2px;
 
 			@include devices(desktop) {
@@ -86,67 +86,40 @@
 			}
 
 			a {
-				border: 1px solid #D2D2D2;
+				border: 1px solid var(--grayColorB);
 				border-radius: 4px;
 				display: flex;
 				align-items: center;
-				color: #818181;
+				color: var(--textColorB);
 				flex-direction: column;
 				text-align: center;
 				height: 100%;
-				padding: 35px 20px 27px;
+				padding: 32px 16px 16px;
 				text-decoration: none;
 
 				.h3 {
 					color: #111;
-					font-size: 20px;
 					max-width: 155px;
 					margin: 0 auto 4px;
-					line-height: 25px;
+					line-height: 32px;
 				}
 
 				p {
-					line-height: 24px;
-					margin-bottom: 5px;
+					line-height: 16px;
+					margin-bottom: 8px;
 				}
 
 				.ico-holder {
-					width: 114px;
-					height: 114px;
-					border: 3px solid #F8F8F8;
-					background: #F8F8F8;
+					width: 128px;
+					height: 128px;
+					border: 2px solid var(--grayColorA);
+					background: var(--grayColorA);
 					border-radius: 100%;
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					margin-bottom: 19px;
+					margin-bottom: 16px;
 					transition: all 0.3s ease;
-		
-					>span {
-						font-size: 66px;
-					}
-
-					>span.icon-menu {
-						font-family: "icomoon" !important;
-						font-size: 15px;
-
-						.path1:before {
-							content: "";
-							color: #67AD5B;
-						}
-	
-						.path2:before {
-							content: "";
-							margin-left: -4em;
-							color: black;
-						}
-	
-						.path3:before {
-							content: "";
-							margin-left: -4em;
-							color: black;
-						}
-					}
 				}
 			}
 
@@ -154,7 +127,7 @@
 				background: rgba(0, 0, 0, 0.01);
 
 				.ico-holder {
-					border-color: #67AD5B;
+					border-color: var(--textColorB);
 				}
 			}
 		}	
