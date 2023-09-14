@@ -1,0 +1,123 @@
+.kMBh0N * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.kMBh0N .container {
+  max-width: 1192px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .kMBh0N .container {
+    padding: 0 31px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .kMBh0N .container {
+    padding: 0 10px;
+  }
+}
+.kMBh0N ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.kMBh0N .services {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -15px;
+}
+@media only screen and (max-width: 1024px) {
+  .kMBh0N .services {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .kMBh0N .services {
+    max-width: 298px;
+    margin: 0 auto;
+  }
+}
+.kMBh0N .services li {
+  width: 25%;
+  padding: 15px;
+  margin-bottom: 2px;
+}
+@media only screen and (max-width: 1024px) {
+  .kMBh0N .services li {
+    width: 33.3%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .kMBh0N .services li {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .kMBh0N .services li {
+    width: 100%;
+  }
+}
+.kMBh0N .services li a {
+  border: 1px solid #D2D2D2;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  color: #818181;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  padding: 35px 20px 27px;
+  text-decoration: none;
+}
+.kMBh0N .services li a .h3 {
+  color: #111;
+  font-size: 20px;
+  max-width: 155px;
+  margin: 0 auto 4px;
+  line-height: 25px;
+}
+.kMBh0N .services li a p {
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.kMBh0N .services li a .ico-holder {
+  width: 114px;
+  height: 114px;
+  border: 3px solid #F8F8F8;
+  background: #F8F8F8;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 19px;
+  transition: all 0.3s ease;
+}
+.kMBh0N .services li a .ico-holder > span {
+  font-size: 66px;
+}
+.kMBh0N .services li a .ico-holder > span.icon-menu {
+  font-family: "icomoon" !important;
+  font-size: 15px;
+}
+.kMBh0N .services li a .ico-holder > span.icon-menu .path1:before {
+  content: "\e909";
+  color: #67AD5B;
+}
+.kMBh0N .services li a .ico-holder > span.icon-menu .path2:before {
+  content: "\e90a";
+  margin-left: -4em;
+  color: black;
+}
+.kMBh0N .services li a .ico-holder > span.icon-menu .path3:before {
+  content: "\e90b";
+  margin-left: -4em;
+  color: black;
+}
+.kMBh0N .services li a:hover {
+  background: rgba(0, 0, 0, 0.01);
+}
+.kMBh0N .services li a:hover .ico-holder {
+  border-color: #67AD5B;
+}
