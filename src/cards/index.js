@@ -19,14 +19,14 @@ class kMBh0N{
 		`
 		<section id="${ attr(this.data.id) }" 
 		class="kMBh0N ${ this.data.c.classes ? attr(this.data.c.classes) : '' }" 
-		style="${ attr(this.data.c.section) }">
+		style="${ attr(this.data.c.section) } --theme-font: ${this.data.font.value}">
 			<div class="container" style="${ attr(this.data.c.container) }">
 				<ul class="services">
 					${
 					this.data.items.map(item => {
 						return `
 							<li>
-								<a href="${ html(item.link.value) }">
+								<a href="${ html(item.link.value) }" style="--theme-color: ${this.data.themeColor.value}">
 									<span class="ico-holder">
 										<img src=${item.icon.value} alt="" style="width:${item.iconSize.value}px"/>
 									</span>

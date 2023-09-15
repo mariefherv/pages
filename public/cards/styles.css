@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: var(--theme-font);
 }
 .kMBh0N .container {
   max-width: 1192px;
@@ -72,7 +73,7 @@
   text-decoration: none;
 }
 .kMBh0N .services li a .h3 {
-  color: #111;
+  color: var(--theme-color);
   max-width: 155px;
   margin: 0 auto 4px;
   line-height: 32px;
@@ -97,5 +98,5 @@
   background: rgba(0, 0, 0, 0.01);
 }
 .kMBh0N .services li a:hover .ico-holder {
-  border-color: var(--textColorB);
+  border-color: var(--theme-color);
 }

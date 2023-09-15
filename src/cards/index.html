@@ -28,6 +28,20 @@
 						"description": "Customizable card components that include an icon, title, and text description.",
 						"preview": true,
 						"slug": "cards",
+						"themeColor": {
+							"input": "color",
+							"title": "Theme color",
+							"value": "#67AD5B",
+							"default": "#67AD5B",
+							"hint": "Border and title color.",
+						},
+						"font": { 
+							"input": "radio", 
+							"title": "Theme font", 
+							"value": "Roboto", 
+							"default": "Roboto", 
+							"hint": "Choose your desired font." 
+						},
 						"items": [
 							{
 								"icon": {
@@ -44,7 +58,7 @@
 									"max": "56",
 									"min": "12",
 									"default": "",
-									"hint": "Icon size in pixels."
+									"hint": "Icon size in pixels:"
 								},
 								"heading": {
 									"input": "text",

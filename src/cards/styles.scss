@@ -30,6 +30,7 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+		font-family: var(--theme-font);
     }
 
 	.container {
@@ -98,7 +99,7 @@
 				text-decoration: none;
 
 				.h3 {
-					color: #111;
+					color: var(--theme-color);
 					max-width: 155px;
 					margin: 0 auto 4px;
 					line-height: 32px;
@@ -127,7 +128,7 @@
 				background: rgba(0, 0, 0, 0.01);
 
 				.ico-holder {
-					border-color: var(--textColorB);
+					border-color: var(--theme-color);
 				}
 			}
 		}	
