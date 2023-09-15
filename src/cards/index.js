@@ -19,7 +19,7 @@ class kMBh0N{
 		`
 		<section id="${ attr(this.data.id) }" 
 		class="kMBh0N ${ this.data.c.classes ? attr(this.data.c.classes) : '' }" 
-		style="${ attr(this.data.c.section) } --theme-font: ${this.data.font.value}">
+		style="${ attr(this.data.c.section) }">
 			<div class="container" style="${ attr(this.data.c.container) }">
 				<ul class="services">
 					${
