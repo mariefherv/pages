@@ -42,7 +42,6 @@
 .kMBh0N .services li {
   width: 25%;
   padding: 16px;
-  margin-bottom: 2px;
 }
 @media only screen and (max-width: 1024px) {
   .kMBh0N .services li {
@@ -71,15 +70,15 @@
   padding: 32px 16px 16px;
   text-decoration: none;
 }
-.kMBh0N .services li a .h3 {
+.kMBh0N .services li a h5 {
   color: var(--theme-color);
   max-width: 155px;
-  margin: 0 auto 4px;
+  margin: 0 auto;
   line-height: 32px;
 }
 .kMBh0N .services li a p {
-  line-height: 16px;
-  margin-bottom: 8px;
+  line-height: 32px;
+  word-break: break-word;
 }
 .kMBh0N .services li a .ico-holder {
   width: 128px;
@@ -99,3 +98,5 @@
 .kMBh0N .services li a:hover .ico-holder {
   border-color: var(--theme-color);
 }
+
+/*# sourceMappingURL=styles.css.map */

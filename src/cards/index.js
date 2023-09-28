@@ -30,7 +30,7 @@ class kMBh0N{
 									<span class="ico-holder">
 										<img src=${item.icon.value} alt="" style="width:${item.iconSize.value}px"/>
 									</span>
-									<strong class='h3'> ${ __html(item.heading.value) } </strong>
+									<h5> ${ __html(item.heading.value) } </h5>
 									<p> ${ __html(item.text.value) } </p>
 								</a>
 							</li>

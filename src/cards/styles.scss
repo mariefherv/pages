@@ -71,7 +71,6 @@
 		li {
 			width: 25%;
 			padding: 16px;
-			margin-bottom: 2px;
 
 			@include devices(desktop) {
 				width: 33.3%;
@@ -97,16 +96,16 @@
 				padding: 32px 16px 16px;
 				text-decoration: none;
 
-				.h3 {
+				h5 {
 					color: var(--theme-color);
 					max-width: 155px;
-					margin: 0 auto 4px;
+					margin: 0 auto;
 					line-height: 32px;
 				}
 
 				p {
-					line-height: 16px;
-					margin-bottom: 8px;
+					line-height: 32px;
+					word-break: break-word;
 				}
 
 				.ico-holder {
