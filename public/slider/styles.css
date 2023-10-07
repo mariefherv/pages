@@ -242,3 +242,21 @@
     text-align: center;
   }
 }
+.kE4WlE li {
+  list-style: none;
+}
+.kE4WlE .categories {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.kE4WlE .categories :last-child {
+  padding-right: 32px;
+}
+.kE4WlE .categories li + li h2::before {
+  content: " > ";
+  letter-spacing: 3rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -23,10 +23,17 @@ class kE4WlE{
         class="kE4WlE ${ this.data.c.classes ? attr(this.data.c.classes) : '' }"
         style="${ attr(this.data.c.section) }">
             <div class="container" style="${ attr(this.data.c.container) }"> 
-              <ul>
-                
+              <ul class="categories">
+                ${
+                  this.data.items.map(item => {
+                    return `
+                      <li>
+                          <h2> ${ __html(item.heading.value) } </h2>
+                      </li>
+                    `
+                    }).join('')
+                  }
               </ul>
-          
               <div class="glide" style="--theme-color: ${this.data.themeColor.value}">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
@@ -40,6 +47,7 @@ class kE4WlE{
                           <div class="text-area">
                             <h2> ${ __html(item.heading.value) } </h2>
                             <p> ${ __html(item.text.value) } </p>
+                          </div>
                       </li>
                     `
                     }).join('')
