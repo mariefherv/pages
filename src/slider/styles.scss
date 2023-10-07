@@ -1,0 +1,137 @@
+
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+@mixin devices ($breakpoint) {
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 400px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == tablet {
+		@media only screen and (max-width: 767px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == md {	//medium screens
+		@media only screen and (max-width: 992px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == desktop {
+		@media only screen and (max-width: 1195px){
+			@content;
+		}
+	}
+}
+
+// glide customizations
+
+.glide__slide {
+	display: flex;
+	width: 100%;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+
+	@include devices(tablet){
+		flex-direction: column;
+	}
+}
+
+.glide__arrows {
+	margin-top: 16px;
+	display: flex;
+	gap: 16px;
+	
+	@include devices(tablet) {
+		justify-content: center;
+	}
+}
+
+.glide__arrow {
+	position: relative;
+	display: inline-block;
+	z-index: 2;
+	background-color: var(--grayColorC);
+	border: none;
+	font-size: 32px;
+	left: 55.5%;
+	top: -64px;
+
+	@include devices(tablet) {
+		left: auto;
+		right: auto;
+		top: 0;
+	}
+
+	@include devices(md) {
+		top: 0;
+	}
+}
+.glide__arrow:focus {
+	outline: none;
+}
+.glide__arrow:hover {
+	background-color: var(--theme-color) !important;
+}
+.glide__arrow--disabled {
+	opacity: 0.33;
+}
+
+
+.kE4WlE {
+	.container {
+		max-width: 1168px;
+		padding: 32px;
+		margin: 0 auto;
+	}
+
+	.img-area {
+		width: 50%;
+		@include devices(tablet) {
+			width: 100%;
+		}
+		
+		img {
+			max-width: 80%;
+			height: auto;
+
+			@include devices(tablet) {
+				max-width: 98%;
+			}
+		}
+	}
+
+	.text-area {
+		align-self: flex-start;
+		width: 40%;
+
+		@include devices(tablet) {
+			align-self: center;
+			width: 80%;
+		}
+	}
+	
+	h2 {
+		font-size: 32px;
+		@include devices(tablet) {
+			text-align: center;
+		}
+	}
+	p {
+		line-height: 32px;
+		font-size: 16px;
+		white-space: pre-wrap;
+		color: var(--txtColorA);
+		padding: 16px 0 32px 0px;
+
+		@include devices(tablet) {
+			text-align: center;
+		}
+	}
+	
+}
