@@ -117,14 +117,12 @@
 	}
 	
 	h2 {
-		font-size: 32px;
 		@include devices(tablet) {
 			text-align: center;
 		}
 	}
 	p {
 		line-height: 32px;
-		font-size: 16px;
 		white-space: pre-wrap;
 		color: var(--txtColorA);
 		padding: 16px 0 32px 0px;

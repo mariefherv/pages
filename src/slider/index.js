@@ -17,60 +17,47 @@ class kE4WlE{
     // render class html
     render = () => {
 
-      document.querySelector('#content').insertAdjacentHTML('beforeend', 
-        `
-        <section id="${ attr(this.data.id) } " 
-        class="kE4WlE ${ this.data.c.classes ? attr(this.data.c.classes) : '' }"
-        style="${ attr(this.data.c.section) }">
-            <div class="container" style="${ attr(this.data.c.container) }"> 
-              <ul class="categories">
-                ${
-                  this.data.items.map(item => {
-                    return `
-                      <li>
-                          <h2> ${ __html(item.heading.value) } </h2>
-                      </li>
-                    `
-                    }).join('')
-                  }
-              </ul>
-              <div class="glide" style="--theme-color: ${this.data.themeColor.value}">
-                <div class="glide__track" data-glide-el="track">
-                  <ul class="glide__slides">
-                  ${
-                  this.data.items.map(item => {
-                    return `
-                      <li class="glide__slide">
-                          <div class="img-area">
-                            <img src="${item.img.value}" alt="">
-                          </div>
-                          <div class="text-area">
-                            <h2> ${ __html(item.heading.value) } </h2>
-                            <p> ${ __html(item.text.value) } </p>
-                          </div>
-                      </li>
-                    `
-                    }).join('')
-                  }
-                  </ul>
-                </div>
-                <div class="glide__arrows" data-glide-el="controls">
-                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
-                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+        document.querySelector('#content').insertAdjacentHTML('beforeend', 
+          `
+          <section id="${ attr(this.data.id) } " 
+          class="kE4WlE ${ this.data.c.classes ? attr(this.data.c.classes) : '' }"
+          style="${ attr(this.data.c.section) }">
+              <div class="container" style="${ attr(this.data.c.container) }">
+                ${ this.data.header.value }
+                <div class="glide" style="--theme-color: ${this.data.themeColor.value}">
+                  <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                    ${
+                    this.data.items.map(item => {
+                      return `
+                        <li class="glide__slide">
+                            <div class="img-area">
+                              <img src="${item.img.value}" alt="">
+                            </div>
+                            <div class="text-area">
+                              <h3>${__html(item.heading.value)}</h3>
+                              <p>${__html(item.text.value)}</p>
+                            </div>
+                        </li>
+                      `
+                      }).join('')
+                    }
+                    </ul>
+                  </div>
+                  <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;</button>
+                  </div>
                 </div>
               </div>
-            </div>
-        </section>
-        `
-      );
-
-    this.listeners()
+          </section>
+          `
+        );
+      this.listeners()
     }
 
     listeners = () => {
       new Glide('.glide').mount();
-
-
     }
 }
 
