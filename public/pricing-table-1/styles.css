@@ -151,7 +151,7 @@
 .kMp5sM .col {
   width: 33.3333%;
   float: left;
-  padding: 0px;
+  padding: 1rem 0rem;
 }
 @media only screen and (max-width: 992px) {
   .kMp5sM .col {

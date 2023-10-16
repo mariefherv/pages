@@ -48,7 +48,7 @@
 	.col {
 		width: 33.3333%;
 		float:left;
-		padding:0px;
+		padding: 1rem 0rem;
 		
 
 		@include devices(md) {
