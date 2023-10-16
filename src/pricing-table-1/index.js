@@ -42,7 +42,7 @@ class kMp5sM{
                           <p>${ __html(item.text.value) }</p>
                           <h1><sup>${currency}</sup>${ __html(item.price.value) }<sub>${ __html(rates[item.rate.value]) }</sub></h1>
                           <ul>
-                            ${item.features.list.map(feature => {
+                            ${item.features.map(feature => {
                               return `
                                 <li>${ __html(feature.value) }</li>
                               `
