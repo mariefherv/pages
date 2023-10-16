@@ -1,0 +1,157 @@
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+@mixin devices ($breakpoint) {
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 400px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == tablet {
+		@media only screen and (max-width: 767px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == md {	//medium screens
+		@media only screen and (max-width: 992px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == desktop {
+		@media only screen and (max-width: 1195px){
+			@content;
+		}
+	}
+}
+
+.kMp5sM {
+	.container {
+		max-width: 1168px;
+		padding: 0 1em;
+		margin: 0 auto;
+	}
+
+	.row {
+		margin: 0 -1em;
+		overflow: hidden;
+		@include devices(md) {
+			display: flex;
+			align-items:center;
+			justify-content:center;
+			flex-wrap:wrap
+		}
+	}
+
+	.col {
+		width: 33.3333%;
+		float:left;
+		padding:0px;
+		
+
+		@include devices(md) {
+			width: 50%;
+			float: none;
+		}
+
+		@include devices(tablet) {
+			width: 100%;
+			float: none;
+		}
+	}
+
+	.pricing-box {
+		padding: 0 2em;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+
+		.img-area, .text-area {
+			text-align: center;
+			padding:0 2rem;
+			flex-wrap:wrap;
+		}
+
+		&.highlight {
+			background: rgba(0,0,0,0.2);
+		}
+
+		img {
+			height: auto;
+			width: 4rem;
+		}
+
+		h1, h2, h3, h4, h5, h6, sup, sub, p {
+			color: var(--theme-color);
+		}
+
+		h1 {
+			border-top:1px solid var(--theme-color);
+			border-bottom:1px solid var(--theme-color);
+			padding: 1rem 0;
+			margin: 1rem 0;
+		}
+
+		h3 {
+			padding: 1rem 0;
+			margin: 1rem 0;
+		}
+
+		sup {
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 5px;
+			margin-top: 10px;
+			font-weight: 400;
+			font-size: 2rem;
+			line-height: 1;
+		}
+
+		sub {
+			display: inline-block;
+			vertical-align: bottom;
+			margin-bottom: 10px;
+			font-weight: 400;
+			font-size: 2rem;
+			line-height: 1;
+		}
+
+		p {
+			padding: 0 0 1rem 0;
+			margin: 0;
+		}
+
+		ul {
+			padding:0 0 30px;
+			list-style:none;
+			margin:0;
+
+			li {
+				margin-bottom: 1rem;
+				line-height: 2rem;
+
+				&:last-child{
+					margin:0;
+				}
+			}
+		}
+
+		a {
+			padding: 1rem 2rem;
+			background: var(--button-color);
+			border-radius: 50px;
+			text-transform: uppercase;
+			font-weight: 500;
+			color: #fff;
+			line-height: 26px;
+			text-decoration:none;
+			
+		}
+
+
+	}
+}
