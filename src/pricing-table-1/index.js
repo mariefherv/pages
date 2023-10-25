@@ -17,7 +17,7 @@ class kMp5sM{
     render = () => {
 
       // for currency symbols
-      const currencyList = ['&#36;','&#8364;','&#x20B1;','&#xa3;','&#xFFE5','&#xFFE5;']
+      const currencyList = ['&#36;','&#8364;','&#x20B1;','&#xa3;','&#xFFE5;','&#20803;']
       const currency = currencyList[this.data.currency.value]
 
       // for rates
@@ -31,9 +31,12 @@ class kMp5sM{
               <div class="row" style="--theme-color: ${this.data.textColor.value}; --button-color: ${this.data.buttonColor.value}">
               ${ 
                 this.data.items.map(item => {
+
+                  const features = item.features.value.split(', ')
+
                   return `
                     <div class="col">
-                      <div class="pricing-box">
+                      <div class="pricing-box ${item.highlight.value == 1 ? 'highlight' : ''}">
                         <div class="img-area">
                           <img src=${item.icon.value} alt=${item.heading.value + ' image'}>
                         </div>
@@ -42,9 +45,9 @@ class kMp5sM{
                           <p>${ __html(item.text.value) }</p>
                           <h1><sup>${currency}</sup>${ __html(item.price.value) }<sub>${ __html(rates[item.rate.value]) }</sub></h1>
                           <ul>
-                            ${item.features.map(feature => {
+                            ${features.map(feature => {
                               return `
-                                <li>${ __html(feature.value) }</li>
+                                <li>${ __html(feature) }</li>
                               `
                             }).join('')}
                           </ul>
