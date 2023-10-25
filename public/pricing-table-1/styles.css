@@ -52,7 +52,7 @@
   height: auto;
   width: 4rem;
 }
-.kMp5sM .pricing-box h1, .kMp5sM .pricing-box h2, .kMp5sM .pricing-box h3, .kMp5sM .pricing-box h4, .kMp5sM .pricing-box h5, .kMp5sM .pricing-box h6, .kMp5sM .pricing-box sup, .kMp5sM .pricing-box sub, .kMp5sM .pricing-box p {
+.kMp5sM .pricing-box h1, .kMp5sM .pricing-box h2, .kMp5sM .pricing-box h3, .kMp5sM .pricing-box h4, .kMp5sM .pricing-box h5, .kMp5sM .pricing-box h6, .kMp5sM .pricing-box sup, .kMp5sM .pricing-box sub, .kMp5sM .pricing-box p, .kMp5sM .pricing-box li {
   color: var(--theme-color);
 }
 .kMp5sM .pricing-box h1 {
