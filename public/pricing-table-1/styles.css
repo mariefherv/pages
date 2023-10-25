@@ -87,9 +87,9 @@
   margin: 0;
 }
 .kMp5sM .pricing-box ul {
-  padding: 0 0 30px;
+  padding: 0 0 2em;
   list-style: none;
-  margin: 0;
+  margin: 0 0 1em;
 }
 .kMp5sM .pricing-box ul li {
   margin-bottom: 1rem;
@@ -108,3 +108,5 @@
   line-height: 26px;
   text-decoration: none;
 }
+
+/*# sourceMappingURL=styles.css.map */
