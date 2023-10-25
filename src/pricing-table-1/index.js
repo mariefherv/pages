@@ -28,7 +28,7 @@ class kMp5sM{
         <section id="${ attr(this.data.id) }" class="kMp5sM ${ this.data.c.classes ? attr(this.data.c.classes) : '' }" style="${ attr(this.data.c.section) }">
             <div class="container" style="${ attr(this.data.c.container) }">
               ${ this.data.header.value }
-              <div class="row" style="--theme-color: ${this.data.textColor.value}; --button-color: ${this.data.buttonColor.value}">
+              <div class="row" style="--theme-color: ${this.data.textColor.value}; --button-color: ${this.data.buttonColor.value}; --button-text-color: ${this.data.buttonTextColor.value}">
               ${ 
                 this.data.items.map(item => {
 
