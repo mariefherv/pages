@@ -43,7 +43,12 @@ class kMp5sM{
                         <div class="text-area">
                           <h3>${ __html(item.heading.value) }</h3>
                           <p>${ __html(item.text.value) }</p>
-                          <h1><sup>${currency}</sup>${ __html(item.price.value) }<sub>${ __html(rates[item.rate.value]) }</sub></h1>
+                          {${this.data.currency.value == 5 ?
+                            `<h1>${ __html(item.price.value) }<sup>${currency}</sup><sub>${ __html(rates[item.rate.value]) }</sub></h1>`
+                            :
+                            `<h1><sup>${currency}</sup>${ __html(item.price.value) }<sub>${ __html(rates[item.rate.value]) }</sub></h1>`
+                          }                          
+                          }
                           <ul>
                             ${features.map(feature => {
                               return `
