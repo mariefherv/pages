@@ -7,53 +7,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto" rel="stylesheet">
-		<link href="../assets/css/global.css?t=1698528114867" rel="stylesheet">
-		<link href="styles.css?t=1698528114867" rel="stylesheet">
+		<link href="../assets/css/global.css?t=${timestamp}" rel="stylesheet">
+		<link href="styles.css?t=${timestamp}" rel="stylesheet">
 	</head>
 	<body>
 		<div id="content">
 
 
 		</div>
-		<script type="text/javascript" src="index.js?t=1698528114867"></script>
+		<script type="text/javascript" src="index.js?t=${timestamp}"></script>
 		<script>
 
 			document.addEventListener("DOMContentLoaded", () => {
 						
-				new kMp5sM(
+				new kTDCWQ(
 					{
 						"id":	"1000",
 						"version": "1.0.0",
-						"title": "Pricing Table (Simple)",
-						"description": "A customizable pricing table with a clean and minimal design",
+						"title": "Pricing Table (Animate on Hover)",
+						"description": "A customizable pricing table with minimal design and has animation on hover",
 						"preview": true,
-						"slug": "pricing-table-1",
+						"slug": "pricing-table-2",
 						"header": {
 							"input": "richtext",
 							"title": "Header",
 							"value": "",
 							"hint": "Header title or description."
 						},
-						"textColor": {
+						"themeColor": {
 							"input": "color",
-							"title": "Text color",
-							"value": "#3a3530",
-							"default": "#3a3530",
-							"hint": "Text and border color"
-						},
-						"buttonColor": {
-							"input": "color",
-							"title": "Button color",
-							"value": "#0abc5f",
-							"default": "#0abc5f",
-							"hint": "Button color"
+							"title": "Theme color",
+							"value": "#850202",
+							"default": "",
+							"hint": "Text and button color"
 						},
 						"buttonTextColor": {
 							"input": "color",
 							"title": "Button text color",
 							"value": "#fff",
-							"default": "#fff",
-							"hint": "Button color"
+							"default": "",
+							"hint": "Button text color"
 						},
 						"currency": {
 							"input": "radio",
@@ -90,58 +83,19 @@
 						},
 						"items": [
 							{
-								"icon": {
-									"input": "image",
-									"title": "Icon",
-									"value": "https://cdn.kenzap.cloud/S1003481/utFMkZxCYCyE-100x100.webp",
-									"default": "",
-									"hint": "Image or icon"
-								},
 								"heading": {
 									"input": "text",
 									"title": "Title",
-									"value": "Basic",
+									"value": "Free Version",
 									"default": "",
 									"hint": "Table title"
-								},
-								"text": {
-									"input": "textarea",
-									"title": "Text",
-									"value": "Start hosting right now without installation fee.",
-									"default": "",
-									"hint": "Table text"
 								},
 								"price": {
 									"input": "number",
 									"title": "Price",
-									"value": "100",
+									"value": "0",
 									"default": "0",
 									"hint": "Price amount"
-								},
-								"rate": {
-									"input": "radio",
-									"title": "Rate",
-									"options": [
-										{
-											"key": "0",
-											"value": "Per hour"
-										},
-										{
-											"key": "1",
-											"value": "Per day"
-										},
-										{
-											"key": "2",
-											"value": "Per month"
-										},
-										{
-											"key": "3",
-											"value": "Per year"
-										}
-									],
-									"value": "2",
-									"default": "0",
-									"hint": "Choose your rate basis"
 								},
 								"highlight": { 
 									"input": "toggle", 
@@ -150,95 +104,19 @@
 									"default": "0", 
 									"hint": "Highlight this item" 
 								},
-								"features": {
-									"input": "textarea",
-									"title": "Features list",
-									"value": "Free installation, 20 WordPress Themes Included, 1 Month of Kenzap Cloud, 1 Month of Free Support, Search Engine Optimization",
-									"default": "",
-									"hint": "Add comma to separate text (example: Feature 1, Feature 2)"
-								},
-								"buttonText": {
-									"input": "text",
-									"title": "Button text",
-									"value": "Read more",
-									"default": "",
-									"hint": "Button text"
-								},
-								"buttonLink": {
-									"input": "text",
-									"title": "Button Link",
-									"value": "#",
-									"default": "",
-									"hint": "Link to be redirected to when button is clicked."
-								}
-							},
-							{
-								"icon": {
-									"input": "image",
-									"title": "Icon",
-									"value": "https://cdn.kenzap.cloud/S1003481/hAgtPHBnRNKC-100x100.webp",
-									"default": "",
-									"hint": "Image or icon"
-								},
-								"heading": {
-									"input": "text",
-									"title": "Title",
-									"value": "Agency",
-									"default": "",
-									"hint": "Table title"
-								},
-								"text": {
-									"input": "textarea",
-									"title": "Text",
-									"value": "Start hosting right now without installation fee.",
-									"default": "",
-									"hint": "Table text"
-								},
-								"price": {
-									"input": "number",
-									"title": "Price",
-									"value": "125",
-									"default": "0",
-									"hint": "Price amount"
-								},
-								"rate": {
-									"input": "radio",
-									"title": "Rate",
-									"options": [
-										{
-											"key": "0",
-											"value": "Per hour"
-										},
-										{
-											"key": "1",
-											"value": "Per day"
-										},
-										{
-											"key": "2",
-											"value": "Per month"
-										},
-										{
-											"key": "3",
-											"value": "Per year"
-										}
-									],
-									"value": "2",
-									"default": "0",
-									"hint": "Choose your rate basis"
-								},
-								"highlight": { 
-									"input": "toggle", 
-									"title": "Highlight", 
-									"value": "1", 
-									"default": "0", 
-									"hint": "Highlight this item" 
+								"highlightText": { 
+									"input": "text", 
+									"title": "Highlight text", 
+									"value": "Best", 
+									"default": "", 
+									"hint": "Text in the highlight box" 
 								},
 								"features": {
 									"input": "textarea",
 									"title": "Features list",
-									"value": "Free installation, 50 WordPress Themes Included, 2 Months of Kenzap Cloud, 2 Month of Free Support, Search Engine Optimization",
+									"value": "Feature 1::Yes, Feature 2::Yes, Feature 3::Yes, Feature 4::No, Feature 5::No, Feature 6::No",
 									"default": "",
-									"hint": "Add comma to separate text (example: Feature 1, Feature 2)"
+									"hint": "Add comma for next line and ::Yes/No for second column (example: Feature 1::Yes, Feature 2::No)"
 								},
 								"buttonText": {
 									"input": "text",
@@ -256,72 +134,91 @@
 								}
 							},
 							{
-								"icon": {
-									"input": "image",
-									"title": "Icon",
-									"value": "https://cdn.kenzap.cloud/S1003481/ExqGUhqYOKSR-100x100.webp",
-									"default": "",
-									"hint": "Image or icon"
-								},
 								"heading": {
 									"input": "text",
 									"title": "Title",
-									"value": "Advanced",
+									"value": "Entry Level",
 									"default": "",
 									"hint": "Table title"
-								},
-								"text": {
-									"input": "textarea",
-									"title": "Text",
-									"value": "Start hosting right now without installation fee.",
-									"default": "",
-									"hint": "Table text"
 								},
 								"price": {
 									"input": "number",
 									"title": "Price",
-									"value": "230",
+									"value": "5",
 									"default": "0",
 									"hint": "Price amount"
-								},
-								"rate": {
-									"input": "radio",
-									"title": "Rate",
-									"options": [
-										{
-											"key": "0",
-											"value": "Per hour"
-										},
-										{
-											"key": "1",
-											"value": "Per day"
-										},
-										{
-											"key": "2",
-											"value": "Per month"
-										},
-										{
-											"key": "3",
-											"value": "Per year"
-										}
-									],
-									"value": "2",
-									"default": "0",
-									"hint": "Choose your rate basis"
 								},
 								"highlight": { 
 									"input": "toggle", 
 									"title": "Highlight", 
-									"value": "0", 
+									"value": "1", 
 									"default": "0", 
 									"hint": "Highlight this item" 
+								},
+								"highlightText": { 
+									"input": "text", 
+									"title": "Highlight text", 
+									"value": "Best", 
+									"default": "", 
+									"hint": "Text in the highlight box" 
 								},
 								"features": {
 									"input": "textarea",
 									"title": "Features list",
-									"value": "Free installation, 200 WordPress Themes Included, 5 Month of Kenzap Cloud, 5 Month of Free Support, Search Engine Optimization",
+									"value": "Feature 1::Yes, Feature 2::Yes, Feature 3::Yes, Feature 4::Yes, Feature 5::No, Feature 6::No",
 									"default": "",
-									"hint": "Add comma and whitespace to separate text (example: Feature 1, Feature 2)"
+									"hint": "Add comma for next line and ::Yes/No for second column (example: Feature 1::Yes, Feature 2::No)"
+								},
+								"buttonText": {
+									"input": "text",
+									"title": "Button text",
+									"value": "Learn more",
+									"default": "",
+									"hint": "Button text"
+								},
+								"buttonLink": {
+									"input": "text",
+									"title": "Button Link",
+									"value": "#",
+									"default": "",
+									"hint": "Link to be redirected to when button is clicked."
+								}
+							},
+							{
+								"heading": {
+									"input": "text",
+									"title": "Title",
+									"value": "Pro Version",
+									"default": "",
+									"hint": "Table title"
+								},
+								"price": {
+									"input": "number",
+									"title": "Price",
+									"value": "10",
+									"default": "0",
+									"hint": "Price amount"
+								},
+								"highlight": { 
+									"input": "toggle", 
+									"title": "Highlight", 
+									"value": "", 
+									"default": "", 
+									"hint": "Highlight this item" 
+								},
+								"highlightText": { 
+									"input": "text", 
+									"title": "Highlight text", 
+									"value": "", 
+									"default": "", 
+									"hint": "Text in the highlight box" 
+								},
+								"features": {
+									"input": "textarea",
+									"title": "Features list",
+									"value": "Feature 1::Yes, Feature 2::Yes, Feature 3::Yes, Feature 4::Yes, Feature 5::Yes, Feature 6::Yes",
+									"default": "",
+									"hint": "Add comma for next line and ::Yes/No for second column (example: Feature 1::Yes, Feature 2::No)"
 								},
 								"buttonText": {
 									"input": "text",
@@ -344,7 +241,7 @@
 						"jslibs": "",
 						"keywords": "my layout, kenzap",
 						"c": {
-							"section": "background-color:#f9f9f9;",
+							"section": "background-color:#f6f6f6;",
 							"container": "max-width:1168px;padding-left:16px;padding-right:16px;",
 							"classes": "pdm "
 						}

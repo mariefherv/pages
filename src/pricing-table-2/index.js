@@ -1,7 +1,7 @@
 // dependencies
 import { __html, html, __attr, attr } from '@kenzap/k-cloud';
 
-class kMp5sM{
+class kTDCWQ{
 
     // init class
     constructor(data){
@@ -20,15 +20,12 @@ class kMp5sM{
       const currencyList = ['&#36;','&#8364;','&#x20B1;','&#xa3;','&#xFFE5;','&#20803;']
       const currency = currencyList[this.data.currency.value]
 
-      // for rates
-      const rates = ['/hr', '/day', '/mo', '/yr']
-
       document.querySelector('#content').insertAdjacentHTML('beforeend', 
         `
-        <section id="${ attr(this.data.id) }" class="kMp5sM ${ this.data.c.classes ? attr(this.data.c.classes) : '' }" style="${ attr(this.data.c.section) }">
-            <div class="container" style="${ attr(this.data.c.container) }">
+        <section id="${ attr(this.data.id) }" class="kTDCWQ ${ this.data.c.classes ? attr(this.data.c.classes) : '' }" style="${ attr(this.data.c.section) }">
+          <div class="container" style="${ attr(this.data.c.container) }">
               ${ this.data.header.value }
-              <div class="row" style="--theme-color: ${this.data.textColor.value}; --button-color: ${this.data.buttonColor.value}; --button-text-color: ${this.data.buttonTextColor.value}">
+              <div class="row" style="--theme-color: ${this.data.themeColor.value}; --button-text-color: ${this.data.buttonTextColor.value}">
               ${ 
                 this.data.items.map(item => {
 
@@ -36,22 +33,20 @@ class kMp5sM{
 
                   return `
                     <div class="col">
-                      <div class="pricing-box ${item.highlight.value == 1 ? 'highlight' : ''}">
-                        <div class="img-area">
-                          <img src=${item.icon.value} alt=${item.heading.value + ' image'}>
-                        </div>
+                      <div class="pricing-box ${item.highlight.value == 1 ? "best-seller" : ''}">
+                        ${item.highlight.value == 1 ? `<span class="ribbon">${__html(item.highlightText.value)}</span>` : ``}
                         <div class="text-area">
                           <h3>${ __html(item.heading.value) }</h3>
-                          <p>${ __html(item.text.value) }</p>
                           ${this.data.currency.value == 5 ?
-                            `<h1>${ __html(item.price.value) }<sup>${currency}</sup><sub>${ __html(rates[item.rate.value]) }</sub></h1>`
+                            `<h1>${ __html(item.price.value) }<sup>${currency}</sup></h1>`
                             :
-                            `<h1><sup>${currency}</sup>${ __html(item.price.value) }<sub>${ __html(rates[item.rate.value]) }</sub></h1>`
+                            `<h1><sup>${currency}</sup>${ __html(item.price.value) }</h1>`
                           }
                           <ul>
                             ${features.map(feature => {
+                              const text = feature.split('::')
                               return `
-                                <li>${ __html(feature) }</li>
+                                <li><div class='feature-text'>${ __html(text[0]) }</div><div class='feature-indicator'>${ __html(text[1]) }</div></li>
                               `
                             }).join('')}
                           </ul>
@@ -70,4 +65,4 @@ class kMp5sM{
     }
 }
 
-window.kMp5sM = kMp5sM;
+window.kTDCWQ = kTDCWQ;
