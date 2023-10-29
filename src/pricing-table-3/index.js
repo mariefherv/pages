@@ -23,6 +23,7 @@ class kOoZtT{
       // for currency symbols
       const currencyList = ['','&#36;','&#8364;','&#x20B1;','&#xa3;','&#xFFE5;','&#20803;']
       const currency = currencyList[this.data.currency.value]
+      console.log(this.data.currency.value)
 
       document.querySelector('#content').insertAdjacentHTML('beforeend', 
         `
@@ -39,7 +40,7 @@ class kOoZtT{
                             return `
                                 <li class="pricing-box">
                                   <h4>${ __html(item.title.value) }</h4>
-                                  <p><span>${ __html(item.description.value) }</span><span>${this.data.currency.value !== 5 ? currency + __html(item.price.value) : __html(item.price.value) + currency}</span></p>
+                                  <p><span>${ __html(item.description.value) }</span><span>${this.data.currency.value != 6 ? currency + __html(item.price.value) : __html(item.price.value) + currency}</span></p>
                                 </li>
                                     `
                                 }).join('')
@@ -53,7 +54,7 @@ class kOoZtT{
                             return `
                                 <li class="pricing-box">
                                   <h4>${ __html(item.title.value) }</h4>
-                                  <p><span>${ __html(item.description.value) }</span><span>${this.data.currency.value !== 5 ? currency + __html(item.price.value) : __html(item.price.value) + currency}</span></p>
+                                  <p><span>${ __html(item.description.value) }</span><span>${this.data.currency.value != 6 ? currency + __html(item.price.value) : __html(item.price.value) + currency}</span></p>
                                 </li>
                                     `
                                 }).join('')
@@ -70,7 +71,7 @@ class kOoZtT{
                         return `
                           <li class="pricing-box">
                             <h4>${ __html(item.title.value) }</h4>
-                            <p><span>${ __html(item.description.value) }</span><span>${this.data.currency.value !== 5 ? currency + __html(item.price.value) : __html(item.price.value) + currency}</span></p>
+                            <p><span>${ __html(item.description.value) }</span><span>${this.data.currency.value != 6 ? currency + __html(item.price.value) : __html(item.price.value) + currency}</span></p>
                           </li>
                             `
                           }).join('')
