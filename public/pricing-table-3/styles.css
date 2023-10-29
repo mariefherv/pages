@@ -1,0 +1,69 @@
+.kOoZtT ul, .kOoZtT li, .kOoZtT p, .kOoZtT a, .kOoZtT h4 {
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+.kOoZtT * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.kOoZtT .container {
+  max-width: 1168px;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+.kOoZtT .row {
+  margin: 0 -16px;
+  overflow: hidden;
+}
+.kOoZtT .row .col-6 {
+  width: 50%;
+  padding: 0 16px;
+  float: left;
+}
+@media only screen and (max-width: 767px) {
+  .kOoZtT .row .col-6 {
+    width: 100%;
+  }
+}
+.kOoZtT .pricing-box {
+  margin: 0 0 32px;
+}
+.kOoZtT .pricing-box h4 {
+  line-height: none;
+}
+.kOoZtT .pricing-box p {
+  font-style: italic;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  padding: 0 2px 0 0;
+}
+.kOoZtT .pricing-box p span {
+  background: var(--background-color);
+  position: relative;
+}
+.kOoZtT .pricing-box p:before {
+  content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  padding: 0 2px;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 767px) {
+  .kOoZtT .pricing-box p:before {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

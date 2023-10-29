@@ -1,0 +1,104 @@
+@mixin devices ($breakpoint) {
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 400px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == tablet {
+		@media only screen and (max-width: 767px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == md {	//medium screens
+		@media only screen and (max-width: 992px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == desktop {
+		@media only screen and (max-width: 1195px){
+			@content;
+		}
+	}
+}
+
+
+.kOoZtT {
+	ul, li, p, a, h4 {
+		padding: 0;
+		margin: 0;
+		box-shadow: none;
+		border: none;
+		text-decoration: none;
+		list-style:none
+	}
+
+	*{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+	.container {
+		max-width: 1168px;
+		padding: 0 1em;
+		margin: 0 auto;
+	}
+
+	.row {
+		margin:0 -16px;
+        overflow:hidden;
+
+		.col-6{			
+			width:50%;
+			padding:0 16px;
+			float:left;
+
+			@include devices(tablet){
+				width: 100%;
+			}
+		}
+	}
+
+	.pricing-box {
+		margin: 0 0 32px;
+
+		h4 {
+			line-height: none;
+		}
+
+		p {
+			font-style: italic;
+			display:flex;
+			display:-webkit-flex;
+			justify-content:space-between;
+			-webkit-justify-content:space-between;
+			align-items:flex-end;
+			-webkit-align-items:flex-end;
+			position:relative;
+			overflow:hidden;
+			padding:0 2px 0 0;
+
+			span {
+				background: var(--background-color);
+				position:relative
+			}
+
+			&:before {
+				content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+				display:block;
+				position:absolute;
+				bottom:0;
+				padding: 0 2px;
+				white-space:nowrap;
+
+				@include devices(tablet) {
+					display:none
+				}
+		}
+	}
+	}
+
+}
