@@ -67,6 +67,7 @@
 
 		h4 {
 			line-height: none;
+			color: var(--text-color);
 		}
 
 		p {
@@ -80,6 +81,7 @@
 			position:relative;
 			overflow:hidden;
 			padding:0 2px 0 0;
+			color: var(--text-color);
 
 			span {
 				background: var(--background-color);
@@ -100,5 +102,4 @@
 		}
 	}
 	}
-
 }

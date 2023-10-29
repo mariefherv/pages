@@ -31,7 +31,7 @@ class kOoZtT{
               ${ this.data.header.value }
               ${this.data.col.value == 2 ?  //if indicated in data that the number of columns is 2
                 `
-                <div class="row" style="${"--"+attr(this.data.c.section)}">
+                <div class="row" style="${ "--"+attr(this.data.c.section) }; --text-color: ${this.data.textColor.value}">
                     <div class="col-6">
                         <ul>
                           ${
@@ -64,7 +64,7 @@ class kOoZtT{
                 `
                 :
                 `
-                <ul style="${"--"+attr(this.data.c.section)}">
+                <ul style="${"--"+attr(this.data.c.section)}; --text-color: ${this.data.textColor.value}">
                     ${
                     this.data.items.map(item => {
                         return `

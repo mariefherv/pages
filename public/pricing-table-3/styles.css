@@ -35,6 +35,7 @@
 }
 .kOoZtT .pricing-box h4 {
   line-height: none;
+  color: var(--text-color);
 }
 .kOoZtT .pricing-box p {
   font-style: italic;
@@ -47,6 +48,7 @@
   position: relative;
   overflow: hidden;
   padding: 0 2px 0 0;
+  color: var(--text-color);
 }
 .kOoZtT .pricing-box p span {
   background: var(--background-color);
