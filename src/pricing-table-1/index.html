@@ -56,37 +56,28 @@
 							"hint": "Button color"
 						},
 						"currency": {
+									"input": "text",
+									"title": "Currency Symbol",
+									"value": "$",
+									"default": "",
+									"hint": "Table title"
+						},
+						"currencyPosition": {
 							"input": "radio",
-							"title": "Currency",
+							"title": "Currency Position",
 							"options": [
 								{
-									"key": "0",
-									"value": "USD (&#36;)"
-								},
-								{
 									"key": "1",
-									"value": "EURO (&#8364;)"
+									"value": "Left"
 								},
 								{
 									"key": "2",
-									"value": "PHP (&#x20B1;)"
-								},
-								{
-									"key": "3",
-									"value": "POUND (&#xa3;)"
-								},
-								{
-									"key": "4",
-									"value": "YEN (&#xFFE5;)"
-								},
-								{
-									"key": "5",
-									"value": "YUAN (&#20803;)"
+									"value": "Right"
 								}
 							],
-							"value": "0",
-							"default": "0",
-							"hint": "Choose your currency"
+							"value": "1",
+							"default": "1",
+							"hint": "Position of the currency symbol"
 						},
 						"items": [
 							{
@@ -124,22 +115,26 @@
 									"options": [
 										{
 											"key": "0",
-											"value": "Per hour"
+											"value": "No rate"
 										},
 										{
 											"key": "1",
-											"value": "Per day"
+											"value": "Per hour"
 										},
 										{
 											"key": "2",
-											"value": "Per month"
+											"value": "Per day"
 										},
 										{
 											"key": "3",
+											"value": "Per month"
+										},
+										{
+											"key": "4",
 											"value": "Per year"
 										}
 									],
-									"value": "2",
+									"value": "3",
 									"default": "0",
 									"hint": "Choose your rate basis"
 								},
@@ -153,9 +148,9 @@
 								"features": {
 									"input": "textarea",
 									"title": "Features list",
-									"value": "Free installation, 20 WordPress Themes Included, 1 Month of Kenzap Cloud, 1 Month of Free Support, Search Engine Optimization",
+									"value": "Free installation\n20 WordPress Themes Included\n1 Month of Kenzap Cloud\n1 Month of Free Support\nSearch Engine Optimization",
 									"default": "",
-									"hint": "Add comma to separate text (example: Feature 1, Feature 2)"
+									"hint": "Enter a new line for each feature. Example:\nFeature 1\nFeature 2\nFeature 3"
 								},
 								"buttonText": {
 									"input": "text",
@@ -207,22 +202,26 @@
 									"options": [
 										{
 											"key": "0",
-											"value": "Per hour"
+											"value": "No rate"
 										},
 										{
 											"key": "1",
-											"value": "Per day"
+											"value": "Per hour"
 										},
 										{
 											"key": "2",
-											"value": "Per month"
+											"value": "Per day"
 										},
 										{
 											"key": "3",
+											"value": "Per month"
+										},
+										{
+											"key": "4",
 											"value": "Per year"
 										}
 									],
-									"value": "2",
+									"value": "3",
 									"default": "0",
 									"hint": "Choose your rate basis"
 								},
@@ -236,9 +235,9 @@
 								"features": {
 									"input": "textarea",
 									"title": "Features list",
-									"value": "Free installation, 50 WordPress Themes Included, 2 Months of Kenzap Cloud, 2 Month of Free Support, Search Engine Optimization",
+									"value": "Free installation\n50 WordPress Themes Included\n2 Months of Kenzap Cloud\n2 Month of Free Support\nSearch Engine Optimization",
 									"default": "",
-									"hint": "Add comma to separate text (example: Feature 1, Feature 2)"
+									"hint": "Enter a new line for each feature. Example:\nFeature 1\nFeature 2\nFeature 3"
 								},
 								"buttonText": {
 									"input": "text",
@@ -290,22 +289,26 @@
 									"options": [
 										{
 											"key": "0",
-											"value": "Per hour"
+											"value": "No rate"
 										},
 										{
 											"key": "1",
-											"value": "Per day"
+											"value": "Per hour"
 										},
 										{
 											"key": "2",
-											"value": "Per month"
+											"value": "Per day"
 										},
 										{
 											"key": "3",
+											"value": "Per month"
+										},
+										{
+											"key": "4",
 											"value": "Per year"
 										}
 									],
-									"value": "2",
+									"value": "3",
 									"default": "0",
 									"hint": "Choose your rate basis"
 								},
@@ -319,9 +322,9 @@
 								"features": {
 									"input": "textarea",
 									"title": "Features list",
-									"value": "Free installation, 200 WordPress Themes Included, 5 Month of Kenzap Cloud, 5 Month of Free Support, Search Engine Optimization",
+									"value": "Free installation\n200 WordPress Themes Included\n5 Month of Kenzap Cloud\n5 Month of Free Support\nSearch Engine Optimization",
 									"default": "",
-									"hint": "Add comma and whitespace to separate text (example: Feature 1, Feature 2)"
+									"hint": "Enter a new line for each feature. Example:\nFeature 1\nFeature 2\nFeature 3"
 								},
 								"buttonText": {
 									"input": "text",

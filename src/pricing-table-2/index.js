@@ -16,10 +16,6 @@ class kTDCWQ{
     // render class html
     render = () => {
 
-      // for currency symbols
-      const currencyList = ['&#36;','&#8364;','&#x20B1;','&#xa3;','&#xFFE5;','&#20803;']
-      const currency = currencyList[this.data.currency.value]
-
       document.querySelector('#content').insertAdjacentHTML('beforeend', 
         `
         <section id="${ attr(this.data.id) }" class="kTDCWQ ${ this.data.c.classes ? attr(this.data.c.classes) : '' }" style="${ attr(this.data.c.section) }">
@@ -29,7 +25,7 @@ class kTDCWQ{
               ${ 
                 this.data.items.map(item => {
 
-                  const features = item.features.value.split(', ')
+                  const features = item.features.value.split('\n')
 
                   return `
                     <div class="col">
@@ -37,10 +33,10 @@ class kTDCWQ{
                         ${item.highlight.value == 1 ? `<span class="ribbon">${__html(item.highlightText.value)}</span>` : ``}
                         <div class="text-area">
                           <h3>${ __html(item.heading.value) }</h3>
-                          ${this.data.currency.value == 5 ?
-                            `<h1>${ __html(item.price.value) }<sup>${currency}</sup></h1>`
+                          ${this.data.currencyPosition.value == 2 ?
+                            `<h1>${ __html(item.price.value) }<sup><b>${  __html(this.data.currency.value) }</b></sup></h1>`
                             :
-                            `<h1><sup>${currency}</sup>${ __html(item.price.value) }</h1>`
+                            `<h1><sup><b>${  __html(this.data.currency.value) }</sup></b>${ __html(item.price.value) }</h1>`
                           }
                           <ul>
                             ${features.map(feature => {
@@ -50,7 +46,7 @@ class kTDCWQ{
                               `
                             }).join('')}
                           </ul>
-                          <a href=${ __html(item.buttonLink.value) }>${ (__html(item.buttonText.value)) }</a>
+                          <a href=${ __html(item.buttonLink.value) }><b>${ (__html(item.buttonText.value)) }</b></a>
                         </div>
                       </div>
                     </div>
